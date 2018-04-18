@@ -9,6 +9,7 @@ public class ep10_4 {
 
             while ((str = in.readLine()) != null) {
                 System.out.println(str);
+                //调用out对象的write()方法写入数据时，不会写入回车，因此需要使用newLine()方法在每行数据后加入回车，以保证目标文件与源文件一致
                 out.write(str);
                 out.newLine();
             }
